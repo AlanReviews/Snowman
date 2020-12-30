@@ -26,6 +26,15 @@ while True:
     # Drawing the right arm
     pygame.draw.line(DISPLAY, BROWN, (250, 350), (325, 275))
 
+    # Drawing the buttons of the snowman
+    pygame.draw.circle(DISPLAY, BLACK, (200, 325), 10)
+    pygame.draw.circle(DISPLAY, BLACK, (200, 350), 10)
+    pygame.draw.circle(DISPLAY, BLACK, (200, 375), 10)
+
+    # Drawing the eyes of the snowman
+    pygame.draw.circle(DISPLAY, BLACK, (190, 270), 5)
+    pygame.draw.circle(DISPLAY, BLACK, (210, 270), 5)
+
     # Making the program display the image until the user chooses to close it
     for event in pygame.event.get():
         if event.type==QUIT:
